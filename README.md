@@ -7,7 +7,8 @@ It is designed to save time and ensure your system stays up-to-date. using `cron
 ## Features
 
 - Detects Kali Linux or Ubuntu
-- Automatically runs `apt update` and `apt upgrade`
+- Automatically runs `apt update` ,`apt upgrade`,`apt-get update`,`apt-get upgrade`and`sudo apt dist-upgrade`
+
 - Easy to run from anywhere after setup
 - Can be scheduled with `cron` for full automation
 
