@@ -1,8 +1,8 @@
 # Linux Update Automation Script
 
-This is a simple Bash script that automatically detects whether your Linux system is `**Debian-based (Kali/Ubuntu)**`<img width="570" height="151" alt="Screenshot_2025-08-15_19_24_48" src="https://github.com/user-attachments/assets/21253a3b-4246-4fea-8580-70410abdb543" />
- and runs the appropriate update commands.
+This is a simple Bash script that automatically detects whether your Linux system is `**Debian-based (Kali/Ubuntu)**`and runs the appropriate update commands.
 It is designed to save time and ensure your system stays up-to-date. using `cron` you can schedule this automation process
+<img width="570" height="151" alt="Screenshot_2025-08-15_19_24_48" src="https://github.com/user-attachments/assets/21253a3b-4246-4fea-8580-70410abdb543" />
 
 ## Features
 
