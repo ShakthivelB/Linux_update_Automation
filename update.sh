@@ -1,19 +1,13 @@
 #!/bin/bash
-
-relese=/etc/os-release
-
-if grep -q "Arch" $relese
-then
-echo "This host is based om Arch"
-sudo pacman -Sys
-fi
-
-if grep -q "kali" $relese || grep -q "ubintu" $relese
-then
-echo "This host is based on kali linux debian"
-sudo apt update
-sudo apt upgrade
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt dist-upgrade
+release=/etc/os-release
+if grep -q "Arch" "$release"; then
+    echo "This host is based on Arch Linux"
+    sudo pacman -Syu
+elif grep -q "kali" "$release" || grep -q "ubuntu" "$release"; then
+    echo "This host is based on Kali/Ubuntu (Debian-based)"
+    sudo apt update && sudo apt upgrade -y
+    sudo apt-get update && sudo apt-get upgrade -y
+    sudo apt dist-upgrade -y
+else
+    echo "Unsupported Linux distribution."
 fi
