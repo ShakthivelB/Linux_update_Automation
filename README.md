@@ -23,6 +23,18 @@ It is designed to save time and ensure your system stays up-to-date. using `cron
 1. **Copy the script to your home directory** (or preferred location):
 2. and name it as Run or Update or what ever you want 
 3. move the file to `/usr/local/bin` and give sudo bash access to the file so it can any where in you system
- 
+
 ```bash
-cp Run ~/
+ sudo nano /usr/local/bin/update~/
+```
+```bash
+ sudo chmod 755 /usr/local/bin/update
+```bash
+ echo $PATH
+```
+```bash
+echo 'export PATH=$PATH:/usr/local/bin' >> ~/.zshrc
+source ~/.zshrc
+```
+```bash
+update
