@@ -27,9 +27,12 @@ It is designed to save time and ensure your system stays up-to-date. using `cron
 ```bash
  sudo nano /usr/local/bin/update~/
 ```
-```bash
+
+```
  sudo chmod 755 /usr/local/bin/update
-```bash
+```
+
+```
  echo $PATH
 ```
 ```bash
